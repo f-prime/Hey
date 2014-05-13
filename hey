@@ -1,0 +1,32 @@
+#!/usr/bin/python
+
+import download
+import sys
+import compression
+
+class Hey:
+    def __init__(self):
+        self.keywords = {
+        
+            "download":download.download,
+            "compress":compression.compress,
+            "decompress":compression.decompress,
+
+        }
+
+    
+    def parse(self):
+        valid = False
+        string = sys.argv[1:]
+        for x in string:
+            if x in self.keywords:
+                valid = True
+                self.keywords[x](' '.join(string))
+                
+        if not valid:
+            print "Sorry, I didn't understand your command."
+
+
+
+if __name__ == "__main__":
+    Hey().parse()
