@@ -3,6 +3,7 @@
 import download
 import sys
 import compression
+import what
 
 class Hey:
     def __init__(self):
@@ -11,7 +12,7 @@ class Hey:
             "download":download.download,
             "compress":compression.compress,
             "decompress":compression.decompress,
-
+            "rename":rename.rename,
         }
 
     

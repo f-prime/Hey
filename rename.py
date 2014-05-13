@@ -1,0 +1,2 @@
+def rename(string):
+    pass
