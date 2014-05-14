@@ -17,9 +17,9 @@ Decompress/Compress
     ./hey compress folder/ as folder.zip
     ./hey decompress folder.tar
 
-Compound commands
-================
+Rename
+======
 
-    ./hey download https://site.com/file.zip as important.zip then decompress important.zip
-    
+    ./hey rename file.txt to file1.txt
+    ./hey rename folder to folder2
 
