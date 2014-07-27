@@ -23,3 +23,15 @@ Rename
     ./hey rename file.txt to file1.txt
     ./hey rename folder to folder2
 
+
+Go
+==
+
+    ./hey I need to check my email, go to https://gmail.com/
+    ./hey go https://gmail.com
+
+
+Tell
+====
+
+    ./hey tell me a joke

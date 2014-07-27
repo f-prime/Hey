@@ -5,6 +5,10 @@ import sys
 import compression
 import rename
 import copy
+import what
+import go
+import tell
+import push
 
 class Hey:
     def __init__(self):
@@ -15,6 +19,11 @@ class Hey:
             "decompress":compression.decompress,
             "rename":rename.rename,
             "copy":copy.copy,
+            "what":what.what,
+            "go":go.go,
+            "tell":tell.tell,
+            "push":push.push,
+
         }
 
     
