@@ -35,3 +35,11 @@ Tell
 ====
 
     ./hey tell me a joke
+
+
+git
+===
+
+    ./hey push everything to github with the message "First commit"
+    ./hey push this, this, this, that "Second commit"
+
