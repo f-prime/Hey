@@ -9,6 +9,7 @@ import what
 import go
 import tell
 import push
+import update
 
 class Hey:
     def __init__(self):
@@ -23,6 +24,7 @@ class Hey:
             "go":go.go,
             "tell":tell.tell,
             "push":push.push,
+            "update":update.update,
 
         }
 

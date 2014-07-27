@@ -13,7 +13,6 @@ def push(string):
         message = message[0]
 
     if files.find("everything") != -1:
-        print "ASDASDASDASD"
         os.system("git add -A")
     else:
         os.system("git add "+' '.join(files.split(",")))
