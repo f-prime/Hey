@@ -43,3 +43,10 @@ git
     ./hey push everything to github with the message "First commit"
     ./hey push this, this, this, that "Second commit"
 
+
+Update
+======
+
+    ./hey update ubuntu
+    ./hey update centos
+    ./hey update debian

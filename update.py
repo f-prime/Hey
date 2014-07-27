@@ -8,4 +8,6 @@ def update(string):
     for x in possibilities:
         if x in string:
             os.system(possibilities[x])
-            break
+            return
+
+    print "That OS or distribution is not supported"
