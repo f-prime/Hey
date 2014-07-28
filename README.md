@@ -29,7 +29,7 @@ Go
 
     ./hey I need to check my email, go to https://gmail.com/
     ./hey go https://gmail.com
-
+    ./hey go to /r/Python
 
 Tell
 ====
