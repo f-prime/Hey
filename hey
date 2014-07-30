@@ -11,6 +11,8 @@ import tell
 import push
 import update
 import google
+import directions
+import find
 
 class Hey:
     def __init__(self):
@@ -30,7 +32,9 @@ class Hey:
             "update":update.update,
             "google":google.google,
             "googling":google.google, # Just a different possible word
-        }
+            "directions":directions.directions,
+            "find":find.find,
+            }
 
     
     def parse(self):

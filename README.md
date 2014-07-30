@@ -59,6 +59,22 @@ Google
     ./hey Would you mind googling "How far is it from here to the sun?" Thanks!
 
 
+Directions
+==========
+
+    ./hey get me directions from "12 hover street, Foovil, PA 32313," to "14 mander street, Barlen, PA 32141"
+
+
+Find
+====
+
+
+    ./hey find me a bar
+    ./hey find me a sushi place
+    ./hey find me a gym
+    ./hey find me a club in San Francisco CA
+    ./hey find me a resturant near Helena MT
+
 What
 ====
 
