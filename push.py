@@ -5,7 +5,11 @@ def push(string):
     string = string.replace("push ", '')
     string = string.split("to")
     files = string[0]
-    message = string[1]
+    try:
+        message = string[1]
+    except IndexError:
+        print "To where should I push it?"
+        return
     message = re.findall("\"(.*)\"", message)
     if not message:
         message = "This was commited with \"Hey\""
