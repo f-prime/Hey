@@ -50,3 +50,26 @@ Update
     ./hey update ubuntu
     ./hey update centos
     ./hey update debian
+
+
+Google
+======
+
+    ./hey google "How awesome is Python?" for me, thanks.
+    ./hey Would you mind googling "How far is it from here to the sun?" Thanks!
+
+
+What
+====
+
+    ./hey what time is it
+    ./hey what is the date
+    ./hey what year is it
+    ./hey what month is it
+    ./hey what day is it
+    ./hey what is my name
+    ./hey what is my operating system
+    ./hey what is my ip
+    ./hey what version are you
+    ./hey what directory am I in
+

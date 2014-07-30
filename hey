@@ -10,6 +10,7 @@ import go
 import tell
 import push
 import update
+import google
 
 class Hey:
     def __init__(self):
@@ -25,7 +26,8 @@ class Hey:
             "tell":tell.tell,
             "push":push.push,
             "update":update.update,
-
+            "google":google.google,
+            "googling":google.google, # Just a different possible word
         }
 
     
