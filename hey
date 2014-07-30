@@ -25,6 +25,8 @@ class Hey:
             "go":go.go,
             "tell":tell.tell,
             "push":push.push,
+            "pull":push.pull,
+            "clone":push.clone,
             "update":update.update,
             "google":google.google,
             "googling":google.google, # Just a different possible word

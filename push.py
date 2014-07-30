@@ -20,3 +20,13 @@ def push(string):
     os.system("git commit -m \""+message+"\"")
     os.system("git push -u origin master")
 
+
+
+def pull(string):
+    os.system("git pull -u origin master")
+
+
+def clone(string):
+    check = re.findall("http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+", string)
+    os.system("git clone {0}".format(check[0]))
+
