@@ -41,7 +41,7 @@ git
 ===
 
     ./hey push everything to github with the message "First commit"
-    ./hey push this, this, this, that "Second commit"
+    ./hey push this, this, this, that to github "Second commit"
 
 
 Update
