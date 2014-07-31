@@ -4,6 +4,7 @@ def update(string):
     possibilities = {"ubuntu":"apt-get update",
                      "centos":"yum update",
                      "debian":"aptitude update",
+                     "arch":"pacman -Syu",
                     }
     for x in possibilities:
         if x in string:
