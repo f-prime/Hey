@@ -2,6 +2,16 @@
 
 "Hey" understands English, with the use of regular expressions and keyword searching you can use dynamic commands.
 
+
+NOTE: if you are running Linux or Windows you have to escape the quotes in the terminal for example
+
+    ./hey google "dog"
+
+Has to really be
+
+    ./hey google \"dog\"
+
+
 Download
 ========
 
