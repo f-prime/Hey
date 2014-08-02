@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
 import download
+import coin
+import dice
 import sys
 import compression
 import rename
@@ -19,6 +21,8 @@ class Hey:
         self.keywords = {
         
             "download":download.download,
+            "dice":dice.dice,
+            "coin":coin.coin,
             "compress":compression.compress,
             "decompress":compression.decompress,
             "rename":rename.rename,
