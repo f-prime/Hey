@@ -48,7 +48,8 @@ class Hey:
         if not valid:
             print "Sorry, I didn't understand your command."
 
-
+def main():
+    Hey().parse()
 
 if __name__ == "__main__":
-    Hey().parse()
+    main()
