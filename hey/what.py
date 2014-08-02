@@ -1,8 +1,8 @@
-import urllib
 from time import gmtime, strftime
+import datetime
 import os
 import platform
-import datetime
+import urllib
 
 def what(string):
     possible = {

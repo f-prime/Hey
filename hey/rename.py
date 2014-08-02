@@ -1,5 +1,5 @@
-import re
 import os
+import re
 
 def rename(string, copy=False):
     if copy:

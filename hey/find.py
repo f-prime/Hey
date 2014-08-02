@@ -1,6 +1,6 @@
-import webbrowser
 import os
 import re
+import webbrowser
 
 def find(data):
     possible = {"find me a":store,

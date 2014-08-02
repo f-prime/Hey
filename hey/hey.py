@@ -1,20 +1,20 @@
 #!/usr/bin/python
 
-import download
 import coin
-import dice
-import sys
 import compression
-import rename
 import copy
-import what
-import go
-import tell
-import push
-import update
-import google
+import dice
 import directions
+import download
 import find
+import go
+import google
+import push
+import rename
+import sys
+import tell
+import update
+import what
 
 class Hey:
     def __init__(self):

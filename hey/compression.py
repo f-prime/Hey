@@ -1,7 +1,7 @@
+import os
 import re
 import tarfile
 import zipfile
-import os
 try:
     import zlib
     mode = zipfile.ZIP_DEFLATED
