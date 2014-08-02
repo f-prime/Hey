@@ -1,4 +1,5 @@
 import os
+import platform
 
 def update(string):
     possibilities = {"ubuntu":"apt-get update",
@@ -6,9 +7,8 @@ def update(string):
                      "debian":"aptitude update",
                      "arch":"pacman -Syu",
                     }
-    for x in possibilities:
-        if x in string:
-            os.system(possibilities[x])
-            return
 
-    print "That OS or distribution is not supported"
+    try:
+        os.system(possibilities[platform.linux_distribution()[0]])
+    except KeyError:
+        print "That OS or distribution is not supported"
