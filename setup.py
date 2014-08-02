@@ -7,6 +7,7 @@ kwargs = {
 	"entry_points" : {"console_scripts" : ["hey=hey.hey:main"]},
 	"name" : "hey",
 	"packages" : ["hey"],
+	"version" : "0.1.0",
 }
 
 setup(**kwargs)
