@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+#Import Readline module for the console.
+import readline
+
 import download
 import sys
 import compression
@@ -14,7 +17,27 @@ import google
 import directions
 import find
 
+
+
+class Console:
+        def __init__(self):
+            pass
+
+        def start(self):
+            print "Welcome to Hey Console. Type 'quit' to exit."
+            while(1):
+                string = raw_input("Hey>")
+                string = string.strip()
+                if string == 'quit':
+                    exit()
+                string = string.split()
+                Hey().parse(string)
+
+
 class Hey:
+    #Used to differentiate between terminal input and console.
+    console  = False
+
     def __init__(self):
         self.keywords = {
         
@@ -35,11 +58,18 @@ class Hey:
             "directions":directions.directions,
             "find":find.find,
             }
-
-    
-    def parse(self):
+    def setTerminal(self,val):
+        #Will set value to the console variable
+        #If console it 0 it is a terminal input else console
+        console = val
+        
+    def parse(self, string=0):
         valid = False
-        string = sys.argv[1:]
+        #Use input from sys.argv only if input given from terminal.
+        print string
+        if self.console:
+            string = sys.argv[1:]
+            print string
         for x in string:
             if x in self.keywords:
                 valid = True
@@ -51,4 +81,9 @@ class Hey:
 
 
 if __name__ == "__main__":
-    Hey().parse()
+    if len(sys.argv) == 1:
+        Hey().setTerminal(True)
+        Cons = Console()
+        Cons.start()
+    else:
+        Hey().parse()
