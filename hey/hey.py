@@ -10,6 +10,7 @@ import find
 import go
 import google
 import push
+import remove
 import rename
 import sys
 import tell
@@ -20,24 +21,25 @@ class Hey:
     def __init__(self):
         self.keywords = {
         
-            "download":download.download,
-            "dice":dice.dice,
+            "clone":push.clone,
             "coin":coin.coin,
             "compress":compression.compress,
-            "decompress":compression.decompress,
-            "rename":rename.rename,
             "copy":copy.copy,
-            "what":what.what,
+            "decompress":compression.decompress,
+            "dice":dice.dice,
+            "directions":directions.directions,
+            "download":download.download,
+            "find":find.find,
             "go":go.go,
-            "tell":tell.tell,
-            "push":push.push,
-            "pull":push.pull,
-            "clone":push.clone,
-            "update":update.update,
             "google":google.google,
             "googling":google.google, # Just a different possible word
-            "directions":directions.directions,
-            "find":find.find,
+            "pull":push.pull,
+            "push":push.push,
+            "remove":remove.remove,
+            "rename":rename.rename,
+            "tell":tell.tell,
+            "update":update.update,
+            "what":what.what,
             }
 
     
