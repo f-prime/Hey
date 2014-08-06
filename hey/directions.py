@@ -1,5 +1,5 @@
-import webbrowser
 import re
+import webbrowser
 
 def directions(data):
     #hey get me directions from "asd,asd,asd" to "asd,asd,asd"

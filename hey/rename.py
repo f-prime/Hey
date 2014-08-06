@@ -1,12 +1,13 @@
-import re
 import os
+import re
+import shutil
 
 def rename(string, copy=False):
     if copy:
-        word = "copy "
+        string = string.split("copy ")[1:][0]
     else:
-        word = "rename "
-    string = string.split(word)[1:][0]
+        string = string.split("rename ")[1:][0]
+
     check = re.findall("\sto\s|\sas\s", string)
     if check:
         for x in check:
@@ -14,10 +15,7 @@ def rename(string, copy=False):
     
     string = string.split()
     if copy: # So I don't repeat myself
-        with open(string[0], 'rb') as read:
-            with open(string[1], 'wb') as write:
-                write.write(read.read())
-
+        shutil.copyfile(string[0], string[1])
         print "The file {0} has been copied to {1}".format(string[0], string[1])
 
     else:

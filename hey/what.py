@@ -1,8 +1,8 @@
-import urllib
 from time import gmtime, strftime
+import datetime
 import os
 import platform
-import datetime
+import urllib
 
 def what(string):
     possible = {
@@ -16,6 +16,7 @@ def what(string):
         "year":year,
         "directory":directory,
         "operating system":my_os,
+        "os":my_os,
         "my name":name,
         }
 
@@ -29,21 +30,19 @@ def name():
     print "Your name is: {}".format(platform.uname()[1])
 
 def my_os():
-    print "You are currently running: {}".format(platform.uname()[0])
+    print "You are currently running: {}".format(platform.linux_distribution()[0])
 
 def directory():
     print "You are currently in: {}".format(os.getcwd())
 
 def month():
-    lookup = {1:"January",2:"Febuary",3:"March",4:"April",5:"May",6:"June",7:"July",8:"August",9:"September",10:"October",11:"November",12:"December"}
-    print "{}".format(lookup[datetime.datetime.today().month])
+    print datetime.datetime.now().strftime("%B")
 
 def year():
     print "{0}".format(strftime("%Y", gmtime()))
 
 def day():
-    lookup = {0:"Monday", 1:"Tuesday", 2:"Wednesday", 3:"Thursday", 4:"Friday",5:"Saturday", 6:"Sunday"}
-    print "Today is {}".format(lookup[datetime.datetime.today().weekday()])
+    print "Today is {}".format(datetime.datetime.now().strftime("%A"))
 
 def date_():
     print "The date is: {0}".format(strftime("%d-%m-%Y", gmtime()))
