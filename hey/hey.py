@@ -71,7 +71,7 @@ class Hey:
         #If console it 0 it is a terminal input else console
         console = val
         
-    def parse(self, string=0):
+    def parse(self, string=""):
         valid = False
         #Use input from sys.argv only if input given from terminal.
         if self.console:
