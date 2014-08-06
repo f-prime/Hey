@@ -1,6 +1,14 @@
 #!/usr/bin/python
 
+<<<<<<< HEAD:hey/hey.py
 import coin
+=======
+#Import Readline module for the console.
+import readline
+
+import download
+import sys
+>>>>>>> 345d094d3b9acabef7006a8b7fc1a094571d131b:hey
 import compression
 import copy
 import dice
@@ -17,7 +25,27 @@ import tell
 import update
 import what
 
+
+
+class Console:
+        def __init__(self):
+            pass
+
+        def start(self):
+            print "Welcome to Hey Console. Type 'quit' to exit."
+            while(1):
+                string = raw_input("Hey>")
+                string = string.strip()
+                if string == 'quit':
+                    exit()
+                string = string.split()
+                Hey().parse(string)
+
+
 class Hey:
+    #Used to differentiate between terminal input and console.
+    console  = False
+
     def __init__(self):
         self.keywords = {
         
@@ -41,11 +69,18 @@ class Hey:
             "update":update.update,
             "what":what.what,
             }
-
-    
-    def parse(self):
+    def setTerminal(self,val):
+        #Will set value to the console variable
+        #If console it 0 it is a terminal input else console
+        console = val
+        
+    def parse(self, string=0):
         valid = False
-        string = sys.argv[1:]
+        #Use input from sys.argv only if input given from terminal.
+        print string
+        if self.console:
+            string = sys.argv[1:]
+            print string
         for x in string:
             if x in self.keywords:
                 valid = True
@@ -58,4 +93,13 @@ def main():
     Hey().parse()
 
 if __name__ == "__main__":
+<<<<<<< HEAD:hey/hey.py
     main()
+=======
+    if len(sys.argv) == 1:
+        Hey().setTerminal(True)
+        Cons = Console()
+        Cons.start()
+    else:
+        Hey().parse()
+>>>>>>> 345d094d3b9acabef7006a8b7fc1a094571d131b:hey
