@@ -1,14 +1,11 @@
 #!/usr/bin/python
 
-<<<<<<< HEAD:hey/hey.py
 import coin
-=======
 #Import Readline module for the console.
 import readline
 
 import download
 import sys
->>>>>>> 345d094d3b9acabef7006a8b7fc1a094571d131b:hey
 import compression
 import copy
 import dice
@@ -34,7 +31,7 @@ class Console:
         def start(self):
             print "Welcome to Hey Console. Type 'quit' to exit."
             while(1):
-                string = raw_input("Hey>")
+                string = raw_input("Hey> ")
                 string = string.strip()
                 if string == 'quit':
                     exit()
@@ -77,10 +74,8 @@ class Hey:
     def parse(self, string=0):
         valid = False
         #Use input from sys.argv only if input given from terminal.
-        print string
         if self.console:
             string = sys.argv[1:]
-            print string
         for x in string:
             if x in self.keywords:
                 valid = True
@@ -93,9 +88,6 @@ def main():
     Hey().parse()
 
 if __name__ == "__main__":
-<<<<<<< HEAD:hey/hey.py
-    main()
-=======
     if len(sys.argv) == 1:
         Hey().setTerminal(True)
         Cons = Console()
