@@ -4,6 +4,7 @@ import coin
 #Import Readline module for the console.
 import readline
 
+import calculate
 import download
 import sys
 import compression
@@ -46,6 +47,8 @@ class Hey:
     def __init__(self):
         self.keywords = {
         
+            "calc" : calculate.calculate,
+            "calculate" : calculate.calculate,
             "clone":push.clone,
             "coin":coin.coin,
             "compress":compression.compress,
