@@ -79,6 +79,7 @@ class Hey:
         #Use input from sys.argv only if input given from terminal.
         if self.console:
             string = sys.argv[1:]
+
         for x in string:
             if x in self.keywords:
                 valid = True
@@ -96,5 +97,5 @@ if __name__ == "__main__":
         Cons = Console()
         Cons.start()
     else:
-        Hey().parse()
+        Hey().parse(sys.argv[1:])
 
