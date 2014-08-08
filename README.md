@@ -107,6 +107,13 @@ Find
     ./hey find file "Python.c"
     ./hey find file containing "Password"
 
+Weather
+=======
+
+    ./hey hows the weather looking for 2502265?
+		./hey for the area code 2502265 show me the weather
+		./hey weather now for area code 2502265
+
 What
 ====
 
