@@ -12,6 +12,21 @@ Has to really be
     ./hey google \"dog\"
 
 
+
+Calculate
+=========
+
+
+    ./hey calculate "4*4"
+
+Probability
+============
+
+
+    ./hey flip a coin
+    ./hey roll a dice 
+
+
 Download
 ========
 
