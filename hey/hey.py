@@ -21,6 +21,7 @@ import rename
 import sys
 import tell
 import update
+import weather
 import what
 
 
@@ -67,6 +68,7 @@ class Hey:
             "rename":rename.rename,
             "tell":tell.tell,
             "update":update.update,
+            "weather":weather.weather,
             "what":what.what,
             }
     def setTerminal(self,val):
