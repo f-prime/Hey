@@ -4,6 +4,7 @@ import coin
 #Import Readline module for the console.
 import readline
 
+import calculate
 import download
 import sys
 import compression
@@ -46,6 +47,8 @@ class Hey:
     def __init__(self):
         self.keywords = {
         
+            "calc" : calculate.calculate,
+            "calculate" : calculate.calculate,
             "clone":push.clone,
             "coin":coin.coin,
             "compress":compression.compress,
@@ -71,11 +74,12 @@ class Hey:
         #If console it 0 it is a terminal input else console
         console = val
         
-    def parse(self, string=0):
+    def parse(self, string=""):
         valid = False
         #Use input from sys.argv only if input given from terminal.
         if self.console:
             string = sys.argv[1:]
+
         for x in string:
             if x in self.keywords:
                 valid = True
@@ -93,5 +97,5 @@ if __name__ == "__main__":
         Cons = Console()
         Cons.start()
     else:
-        Hey().parse()
+        Hey().parse(sys.argv[1:])
 
