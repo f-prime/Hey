@@ -25,6 +25,8 @@ Probability
 
     ./hey flip a coin
     ./hey roll a dice 
+    ./hey roll a dice with 12 sides
+    ./hey roll a 64 sided dice for me
 
 
 Download
