@@ -4,6 +4,7 @@ import coin
 #Import Readline module for the console.
 import readline
 
+import blend
 import calculate
 import download
 import sys
@@ -48,6 +49,7 @@ class Hey:
     def __init__(self):
         self.keywords = {
         
+            "blend" : blend.blend,
             "calc" : calculate.calculate,
             "calculate" : calculate.calculate,
             "clone":push.clone,
