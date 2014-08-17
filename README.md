@@ -25,6 +25,8 @@ Probability
 
     ./hey flip a coin
     ./hey roll a dice 
+    ./hey roll a dice with 12 sides
+    ./hey roll a 64 sided dice for me
 
 
 Download
@@ -106,6 +108,13 @@ Find
     ./hey find me a resturant near Helena MT
     ./hey find file "Python.c"
     ./hey find file containing "Password"
+
+Weather
+=======
+
+    ./hey hows the weather looking for 2502265?
+		./hey for the area code 2502265 show me the weather
+		./hey weather now for area code 2502265
 
 What
 ====

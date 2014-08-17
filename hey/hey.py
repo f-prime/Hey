@@ -4,6 +4,7 @@ import coin
 #Import Readline module for the console.
 import readline
 
+import blend
 import calculate
 import download
 import sys
@@ -21,6 +22,7 @@ import rename
 import sys
 import tell
 import update
+import weather
 import what
 
 
@@ -47,6 +49,7 @@ class Hey:
     def __init__(self):
         self.keywords = {
         
+            "blend" : blend.blend,
             "calc" : calculate.calculate,
             "calculate" : calculate.calculate,
             "clone":push.clone,
@@ -67,6 +70,7 @@ class Hey:
             "rename":rename.rename,
             "tell":tell.tell,
             "update":update.update,
+            "weather":weather.weather,
             "what":what.what,
             }
     def setTerminal(self,val):
