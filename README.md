@@ -12,6 +12,11 @@ Has to really be
     ./hey google \"dog\"
 
 
+Weather
+=======
+
+    ./hey weather for 89893
+
 
 Calculate
 =========

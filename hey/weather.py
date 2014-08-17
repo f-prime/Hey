@@ -27,7 +27,8 @@ def print_forecast(dom):
 
 def weather(string):
     find_results = re.findall("(\d{7})", string)
-
+    if not find_results:
+        find_results = re.findall("(\d{5})", string)
     # If we couldn't find a 7 digit area code...  
     if not find_results:
         print "Please supply a valid 7 digit area code."
